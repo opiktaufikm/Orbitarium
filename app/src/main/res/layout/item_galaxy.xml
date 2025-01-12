@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <!-- CardView to make the item visually more attractive -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <!-- ImageView for the background image -->
+            <ImageView
+                android:id="@+id/imgGalaxy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_background"
+                android:clipToOutline="true"
+                tools:src="@drawable/bimasakti" />
+
+            <!-- TextView at the top of the image -->
+            <TextView
+                android:id="@+id/namaGalaxy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Galaxy"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="8dp" />
+
+            <!-- Button at the bottom of the image -->
+            <Button
+                android:id="@+id/btnLihat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="#1273D2"
+                android:textColor="@android:color/white"
+                android:text="Explore"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

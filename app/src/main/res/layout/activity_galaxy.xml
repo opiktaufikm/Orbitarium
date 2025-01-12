@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/blueA"
+    android:padding="16dp"
+    >
+
+    <!-- Wrapper LinearLayout with margin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+
+        <!-- Continent Name -->
+        <TextView
+            android:id="@+id/namagalaxy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bimasakti"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Continent Image -->
+        <ImageView
+            android:id="@+id/imggalaxy"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bimasakti"
+            android:contentDescription="Continent Image"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_background" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FF9800"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title for Country List -->
+        <TextView
+            android:id="@+id/titleDaftarPlanet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Planet"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RecyclerView for Country List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listPlanet"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</LinearLayout>
